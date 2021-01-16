@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transYallColor" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:layout_gravity="center" android:id="@id/txt_dia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="List Of Saved Locations" />
+    <View android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+    <ListView android:layout_gravity="center" android:id="@id/ListView_locations" android:background="@color/transYallColor" android:layout_width="310.0dip" android:layout_height="200.0dip" android:layout_margin="10.0dip" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/liner_selected_data" android:background="@color/transYallColorDark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:id="@id/textv_showselctedName" android:background="@color/transYallColor" android:layout_width="310.0dip" android:layout_height="wrap_content" android:selectAllOnFocus="true" />
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:id="@id/textv_showselctedLatLong" android:background="@color/transYallColor" android:layout_width="310.0dip" android:layout_height="wrap_content" android:selectAllOnFocus="true" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:background="@color/transYallColor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <ImageButton android:id="@id/btn_yes" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_margin="5.0dip" android:layout_weight="1.0" app:srcCompat="@drawable/directions_black_24dp" />
+        <ImageButton android:id="@id/btn_no" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_margin="5.0dip" android:layout_weight="1.0" app:srcCompat="@drawable/delete_forever_black_24dp" />
+        <ImageButton android:id="@id/btn_ex" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_margin="5.0dip" android:layout_weight="1.0" app:srcCompat="@drawable/cancel_black_24dp" />
+    </LinearLayout>
+</LinearLayout>

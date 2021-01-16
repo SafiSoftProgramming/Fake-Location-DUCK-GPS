@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/confirm_address_map_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.google.android.gms.maps.SupportMapFragment" android:id="@id/map" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <com.google.android.gms.ads.AdView android:layout_gravity="center" android:id="@id/chooseadView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" ads:adSize="SMART_BANNER" ads:adUnitId="ca-app-pub-5637187199850424/3811866394" xmlns:ads="http://schemas.android.com/apk/res-auto" />
+    <View android:id="@id/view" android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/confirm_address_map_custom_marker" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/duckicon" android:layout_above="@id/view" android:layout_centerHorizontal="true" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/arrow_up" android:layout_width="fill_parent" android:layout_height="wrap_content" app:srcCompat="@drawable/arrow_drop_up_black_24dp" />
+
+        <ScrollView
+            android:id="@id/scrool_option"
+            android:layout_width="wrap_content"
+            android:layout_height="350.0dip"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@id/save_favorite_but"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:background="@drawable/roundedbutton"
+                    app:srcCompat="@drawable/add_location_black_24dp" />
+
+                <ImageButton
+                    android:id="@id/view_favorite_but"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:background="@drawable/roundedbutton"
+                    app:srcCompat="@drawable/favorite_black_24dp" />
+
+                <ImageButton
+                    android:id="@id/mapview_but"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:background="@drawable/roundedbutton"
+                    app:srcCompat="@drawable/map_black_24dp" />
+
+                <ImageButton
+                    android:id="@id/satview_but"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:background="@drawable/roundedbutton"
+                    app:srcCompat="@drawable/gpsview_black_24dp" />
+
+                <ImageButton
+                    android:id="@id/zoomin_but"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:background="@drawable/roundedbutton"
+                    app:srcCompat="@drawable/zoom_in_black_24dp" />
+
+                <ImageButton
+                    android:id="@id/zoomout_but"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:background="@drawable/roundedbutton"
+                    app:srcCompat="@drawable/zoom_out_black_24dp" />
+
+                <ImageButton
+                    android:id="@id/zoomallout_but"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:background="@drawable/roundedbutton"
+                    app:srcCompat="@drawable/zoom_all_out_map_black_24dp" />
+
+                <ImageButton
+                    android:id="@id/streetview_but"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:background="@drawable/roundedbutton"
+                    app:srcCompat="@drawable/streetview_black_24dp" />
+
+                <ImageButton
+                    android:id="@id/settings_but"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:background="@drawable/roundedbutton"
+                    app:srcCompat="@drawable/settings_black_24dp" />
+
+            </LinearLayout>
+        </ScrollView>
+        <ImageView
+            android:id="@id/arrow_down"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/arrow_drop_down_black_24dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:layout_gravity="center"
+            android:id="@id/stop_but"
+            android:background="@drawable/roundedbutton"
+            android:layout_width="35.0dip"
+            android:layout_height="35.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginBottom="10.0dip"
+            android:scaleType="fitCenter"
+            android:layout_weight="1.0"
+            app:srcCompat="@drawable/location_off_black_48dp" />
+
+        <ImageButton
+            android:layout_gravity="center"
+            android:id="@id/start_but"
+            android:background="@drawable/roundedbutton"
+            android:layout_width="35.0dip"
+            android:layout_height="35.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginBottom="10.0dip"
+            android:scaleType="fitCenter"
+            android:layout_weight="1.0"
+            app:srcCompat="@drawable/location_on_black_48dp" />
+
+    </LinearLayout>
+</RelativeLayout>

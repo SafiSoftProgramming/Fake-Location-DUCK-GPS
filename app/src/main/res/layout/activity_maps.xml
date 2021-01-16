@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/confirm_address_map_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/chooseadView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        ads:adSize="SMART_BANNER"
+        app:adUnitId="ca-app-pub-5637187199850424/3811866394"
+        android:visibility="gone"/>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:background="@color/transYallColor">
+
+
+        <EditText
+            android:id="@+id/ed_tx_search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:hint="Enter Address , city or Zip Code"
+            android:imeOptions="actionSearch"
+           />
+
+        <ImageView
+            android:id="@+id/search_par"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/ic_search_black_24dp"
+            />
+
+    </LinearLayout>-->
+
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true" />
+
+
+    <ImageView
+        android:id="@+id/confirm_address_map_custom_marker"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/duckicon" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/arrow_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/arrow_drop_up_black_24dp"/>
+
+    <ScrollView
+        android:id="@+id/scrool_option"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageButton
+            android:id="@+id/save_favorite_but"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/roundedbutton"
+            app:srcCompat="@drawable/add_location_black_24dp"
+            />
+
+        <ImageButton
+            android:id="@+id/view_favorite_but"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/roundedbutton"
+            app:srcCompat="@drawable/favorite_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/mapview_but"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/roundedbutton"
+            app:srcCompat="@drawable/map_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/satview_but"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/roundedbutton"
+            app:srcCompat="@drawable/gpsview_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/zoomin_but"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/roundedbutton"
+            app:srcCompat="@drawable/zoom_in_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/zoomout_but"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/roundedbutton"
+            app:srcCompat="@drawable/zoom_out_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/zoomallout_but"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/roundedbutton"
+            app:srcCompat="@drawable/zoom_all_out_map_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/streetview_but"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/roundedbutton"
+            app:srcCompat="@drawable/streetview_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/settings_but"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/roundedbutton"
+            app:srcCompat="@drawable/settings_black_24dp" />
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+        <ImageView
+            android:id="@+id/arrow_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/arrow_drop_down_black_24dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/stop_but"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundedbutton"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/location_off_black_48dp" />
+
+
+        <ImageButton
+            android:id="@+id/start_but"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundedbutton"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/location_on_black_48dp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

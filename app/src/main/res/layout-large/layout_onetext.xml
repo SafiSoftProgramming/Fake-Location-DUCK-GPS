@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transYallColorDark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:id="@id/textv_locationName" android:background="@color/transYallColor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:selectAllOnFocus="true" />
+</LinearLayout>
