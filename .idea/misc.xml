@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/ALL COMPLETED PROJECTS ALL TYPS/FakeLocationDuckProject/REBULD_FAKELOCATION_DUCK/app/src/main/res/layout/activity_map.xml" value="0.36666666666666664" />
+        <entry key="..\:/ALL COMPLETED PROJECTS ALL TYPS/FakeLocationDuckProject/REBULD_FAKELOCATION_DUCK/app/src/main/res/layout/activity_splash.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mostz/Desktop/FakeLocationDuckProject/REBULD_FAKELOCATION_DUCK/app/src/main/res/layout-v19/activity_map.xml" value="0.1953125" />
+        <entry key="..\:/Users/mostz/Desktop/FakeLocationDuckProject/REBULD_FAKELOCATION_DUCK/app/src/main/res/layout-v19/app_permissions_dialog.xml" value="0.1953125" />
+        <entry key="..\:/Users/mostz/Desktop/FakeLocationDuckProject/REBULD_FAKELOCATION_DUCK/app/src/main/res/layout-v19/info_dialog.xml" value="0.1953125" />
+        <entry key="..\:/Users/mostz/Desktop/FakeLocationDuckProject/REBULD_FAKELOCATION_DUCK/app/src/main/res/layout-v19/layout_onetext.xml" value="0.1953125" />
+        <entry key="..\:/Users/mostz/Desktop/FakeLocationDuckProject/REBULD_FAKELOCATION_DUCK/app/src/main/res/layout-v19/save_dialog.xml" value="0.1953125" />
+        <entry key="..\:/Users/mostz/Desktop/FakeLocationDuckProject/REBULD_FAKELOCATION_DUCK/app/src/main/res/layout-v19/settings_dialog.xml" value="0.1953125" />
+        <entry key="..\:/Users/mostz/Desktop/FakeLocationDuckProject/REBULD_FAKELOCATION_DUCK/app/src/main/res/layout-v19/user_guide.xml" value="0.1953125" />
+        <entry key="..\:/Users/mostz/Desktop/FakeLocationDuckProject/REBULD_FAKELOCATION_DUCK/app/src/main/res/layout-v19/view_dialog.xml" value="0.1953125" />
+        <entry key="..\:/Users/mostz/Desktop/FakeLocationDuckProject/REBULD_FAKELOCATION_DUCK/app/src/main/res/layout/activity_map.xml" value="0.25625" />
+        <entry key="..\:/Users/mostz/Desktop/FakeLocationDuckProject/REBULD_FAKELOCATION_DUCK/app/src/main/res/layout/activity_splash.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/mostz/Desktop/FakeLocationDuckProject/REBULD_FAKELOCATION_DUCK/app/src/main/res/layout/info_dialog.xml" value="0.3625" />
+        <entry key="..\:/Users/mostz/Desktop/FakeLocationDuckProject/REBULD_FAKELOCATION_DUCK/app/src/main/res/layout/settings_dialog.xml" value="0.3625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

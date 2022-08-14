@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:keepScreenOn="true"
+    android:gravity="center"
+    tools:context=".MapActivity">
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-5637187199850424/3811866394">
+        <!--test code ca-app-pub-3940256099942544/6300978111 -->
+        <!--real code ca-app-pub-5637187199850424/3811866394 -->
+    </com.google.android.gms.ads.AdView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_below="@+id/adView"
+        android:layout_gravity="center">
+
+
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            tools:context=".QRmakerActivity" />
+
+
+
+       <LinearLayout
+       android:id="@+id/lay_search"
+       android:layout_width="250dp"
+       android:layout_height="45dp"
+       android:orientation="horizontal"
+       android:gravity="center"
+       android:background="@drawable/ic_search_bg"
+       android:layout_alignParentStart="true"
+       android:layout_marginTop="10dp">
+
+
+       <EditText
+           android:id="@+id/edtxt_locationSearch"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="match_parent"
+           android:textSize="12sp"
+           android:hint="Enter Address , City or Zip Code"
+           android:imeOptions="actionSearch"
+          />
+
+           <ImageButton
+               android:id="@+id/btn_search"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_marginEnd="3dp"
+               android:layout_gravity="center_vertical"
+               android:background="@drawable/btn_eff_search"
+               />
+
+   </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lay_latlng"
+            android:layout_width="230dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/lay_search"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/ic_lattng_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtv_lat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/txtv_lng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lay_click_info"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/lay_latlng"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:background="@drawable/ic_search_bg"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/txt_lay_info"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="center"
+                android:text="ghgfh"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imgv_info"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="center" />
+
+
+        </LinearLayout>
+
+
+
+
+        <ImageView
+            android:id="@+id/confirm_address_map_custom_marker"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_duck_marker" />
+
+
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="375dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"
+            android:background="@drawable/ic_btns_bg"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/arrow_up"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_arrow_up_menu"/>
+
+            <ScrollView
+                android:id="@+id/scrool_option"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:scrollbars="none"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <ImageButton
+                        android:id="@+id/save_favorite_but"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/btn_eff_save_location"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/view_favorite_but"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/btn_eff_favorite" />
+
+
+
+                    <ImageButton
+                        android:id="@+id/zoomin_but"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/btn_eff_zoom_in"/>
+
+                    <ImageButton
+                        android:id="@+id/zoomout_but"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/btn_eff_zoom_out" />
+
+                    <ImageButton
+                        android:id="@+id/zoomallout_but"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/btn_eff_zoom_all_out" />
+
+                    <ImageButton
+                        android:id="@+id/mapview_but"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/btn_eff_map_look" />
+
+                    <ImageButton
+                        android:id="@+id/satview_but"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/btn_eff_sat_look" />
+
+                    <ImageButton
+                        android:id="@+id/darkmode_but"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/btn_eff_map_dark_mode" />
+
+                    <ImageButton
+                        android:id="@+id/streetview_but"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/btn_eff_street_view" />
+
+                    <ImageButton
+                        android:id="@+id/info_but"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/btn_eff_info" />
+
+                    <ImageButton
+                        android:id="@+id/settings_but"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/btn_eff_settings" />
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <ImageView
+                android:id="@+id/arrow_down"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_arrow_down_menu"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="165dp"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/ic_btns_start_end_bg"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/stop_but"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center_vertical"
+               android:layout_marginStart="20dp"
+                android:background="@drawable/btn_eff_stop" />
+
+
+            <ImageButton
+                android:id="@+id/start_but"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/btn_eff_start" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
